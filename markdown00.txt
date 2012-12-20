@@ -1,0 +1,26 @@
+1. what is markdown?
+    轻量级标记语言，标签类似于html
+2. why markdown
+    简单    语法不多
+    流行    github的readme,stackflow均支持markdown
+    易读    不像html有很多tag
+3. 亮点
+2. markdownv如何转成pdf
+    用ruby写的工具 gimli
+    install:
+        yum install rubygems ruby-devel gcc libxml2-devel libxslt-devel
+        gem install gimli
+            安装过程要在网上去下载3个不大的包
+    use:
+        gimli -f file.md
+2. markdown 可以做什么
+    github README
+    随手记
+    纯文本笔记
+3. 怎样写markdown
+    markdown本身是带标记的纯文本，任何纯文本编辑器都可以书写；也有在线编辑器
+    pandoc 在线转换成html 可用来测试语法 
+5. 语法
+    官网 http://daringfireball.net/projects/markdown/syntax
+    中文语法 http://wowubuntu.com/markdown/
+    markdown中可以直接使用html，比如table
