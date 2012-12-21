@@ -24,3 +24,57 @@
     官网 http://daringfireball.net/projects/markdown/syntax
     中文语法 http://wowubuntu.com/markdown/
     markdown中可以直接使用html，比如table
+    5.1 标题
+        setext风格，只支持 h1 h2,=-数量多少都可以
+            this is an H1
+            ============
+
+            this is an H2
+            -------------
+        atx风格 用#数量定义标题，支持 h1-h6,末尾也可以也任意数量的#闭合标题 
+            # H1
+            ## H2
+            ### H3
+            #### H4
+            ##### H5
+            ###### H6
+    5.2 引用区块 被解析成 <quote></quote>
+        引用的文本会缩进显示，支持嵌套引用,引用内部支持其他markdown语法
+        > this is blockquote
+        > > this is a blockquote in blockquote
+        > > ## this is a H2 in blockquote
+    5.3 列表
+        无序列表，* + - 都可以
+            * list1
+            * list2
+            * list3
+        有序列表 数字接着一个英文句点
+        列表中的数字不影响输出的HTML结果
+        列表内的段落和引用都需要缩进
+            1. list1
+            4. list2
+            2. list3
+            会被解析成
+            <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            </ol>
+        避免不必要的列表,1999\.
+    5.4 代码区块
+        缩进4个空格或1个tab即可,代码区块延续到没有缩进的那一行
+    5.5 分隔线
+        3个以上的 * - _
+        * * *
+        ***
+        ******
+        _______________
+    5.6 区段元素
+        链接
+        强调 * _ 包围字词即可
+            *word* _word_
+        代码
+        图片
+    5.7
+        自动链接
+        反斜杠
