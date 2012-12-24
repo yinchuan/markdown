@@ -1,0 +1,21 @@
+#!/bin/bash
+# markdown to html
+#
+
+# 没有判断参数的有效性
+
+EXEC='/usr/local/bin/redcarpet'
+CSS_FILE='/home/yinchuan/Documents/GitHub2.css'
+HTML='/tmp/index.html'
+
+HTML_HEADER=`cat <<EOF
+<html>
+<head>
+    <link href="$CSS_FILE" type="text/css" rel='stylesheet'>
+</head>
+<body>
+EOF`
+
+echo "$HTML_HEADER" > "$HTML"
+"$EXEC" $1 --smarty >> "$HTML"
+echo "</body></html>" >> "$HTML"

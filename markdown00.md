@@ -21,13 +21,13 @@ use:
 ### markdown本地预览 github 风格
 [grip](https://github.com/joeyespo/grip)
 grip是用python写的工具，运行时要调用github的API，依赖网络
-```
-yum install pip-python
-pip install grip
-```
+
+    yum install pip-python
+    pip install grip
+
 ### 利用github官方的markdownx引擎redcarpet
 redcarpet解析后重定向到指定文件，调用github2的css
-浏览器用自动刷新的扩展
+bash脚本见 mkmd
 ### markdown 可以做什么
 * github README
 * 写博客
