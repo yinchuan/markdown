@@ -71,10 +71,24 @@
         _______________
     5.6 区段元素
         链接
+            行内式 [链接文本](链接地址)
+                [example](http://test.com)
+            参考式
+                [链接文本][链接标识]
+                [链接标识]: 链接地址 "title"
+                [example][1]
+                [1]: http://test.com "test.com"
         强调 * _ 包围字词即可
             *word* _word_
-        代码
+        行内代码
+            `code`
         图片
-    5.7
-        自动链接
-        反斜杠
+            语法与链接类似
+            行内式
+                ![alt text](url/to/image)
+            参考式
+                ![alt text][id]
+                [id]: url/to/image
+    5.7 其他
+        自动链接 用尖括号包起来会自动转成链接 <http://test.com>
+        反斜杠\ 转义特殊字符
