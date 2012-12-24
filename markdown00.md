@@ -16,11 +16,18 @@ install: 安装过程要在网上去下载3个不大的包
 use:
 
     gimli -f file.md
+### markdown本地预览 github 风格
+[grip](https://github.com/joeyespo/grip)
+```
+yum install pip-python
+pip install grip
+```
 ### markdown 可以做什么
 * github README
 * 写博客
 * 随手记
 * 纯文本笔记
+
 ### 怎样写markdown
 markdown本身是带标记的纯文本，任何纯文本编辑器都可以书写；也有在线编辑器   
 pandoc 在线转换成html 可用来测试语法 
