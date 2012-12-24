@@ -18,6 +18,7 @@ use:
     gimli -f file.md
 ### markdown本地预览 github 风格
 [grip](https://github.com/joeyespo/grip)
+grip是用python写的工具，运行时要调用github的API，依赖网络
 ```
 yum install pip-python
 pip install grip
