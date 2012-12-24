@@ -26,8 +26,12 @@ grip是用python写的工具，运行时要调用github的API，依赖网络
     pip install grip
 
 ### 利用github官方的markdownx引擎redcarpet
-redcarpet解析后重定向到指定文件，调用github2的css
-bash脚本见 mkmd
+redcarpet解析后重定向到指定文件，调用github2的css   
+bash脚本见 mkmd   
+安装[redcarpet](https://github.com/vmg/redcarpet)
+
+    $ [sudo] yum install ruby rubygems
+    $ [sudo] gem install redcarpet
 ### markdown 可以做什么
 * github README
 * 写博客
