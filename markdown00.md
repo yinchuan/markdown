@@ -13,25 +13,33 @@
 
 install: 安装过程要在网上去下载3个不大的包
 
-    yum install rubygems ruby-devel gcc libxml2-devel libxslt-devel
-    gem install gimli
+```
+yum install rubygems ruby-devel gcc libxml2-devel libxslt-devel
+gem install gimli
+```
 use:
 
-    gimli -f file.md
+```
+gimli -f file.md
+```
 ### markdown本地预览 github 风格
 [grip](https://github.com/joeyespo/grip)
 grip是用python写的工具，运行时要调用github的API，依赖网络
 
-    yum install pip-python
-    pip install grip
-
+```
+yum install pip-python
+pip install grip
+```
 ### 利用github官方的markdownx引擎redcarpet
 redcarpet解析后重定向到指定文件，调用github2的css   
 bash脚本见 mkmd   
 安装[redcarpet](https://github.com/vmg/redcarpet)
 
-    $ [sudo] yum install ruby rubygems
-    $ [sudo] gem install redcarpet
+```
+$ [sudo] yum install ruby rubygems
+$ [sudo] gem install redcarpet
+```
+解晰出html文件后,如果需要PDF版本,可以用`wkhtmltopdf`转换,支持目录,功能更多.
 ### markdown 可以做什么
 * github README
 * 写博客

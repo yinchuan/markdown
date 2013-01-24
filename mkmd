@@ -8,14 +8,21 @@ EXEC='/usr/local/bin/redcarpet'
 CSS_FILE='/home/yinchuan/Documents/GitHub2.css'
 HTML='/tmp/index.html'
 
+# 定义CSS文件的路径
+# 定义文件编码为UTF-8,否则用wkhtmltopdf时会有乱码
 HTML_HEADER=`cat <<EOF
 <html>
 <head>
     <link href="$CSS_FILE" type="text/css" rel='stylesheet'>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 </head>
 <body>
 EOF`
 
 echo "$HTML_HEADER" > "$HTML"
-"$EXEC" $1 --smarty >> "$HTML"
+# 转换markdown文件到html
+# "$EXEC" $1 --smarty >> "$HTML"
+# 测试 --parse-fenced_code_blocks
+"$EXEC" --parse-lax_spacing --parse-fenced_code_blocks  $1 >> "$HTML"
+# html文件结束标记
 echo "</body></html>" >> "$HTML"
