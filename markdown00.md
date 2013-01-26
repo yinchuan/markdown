@@ -36,7 +36,7 @@ bash脚本见 mkmd
 安装[redcarpet](https://github.com/vmg/redcarpet)
 
 ```
-$ [sudo] yum install ruby rubygems
+$ [sudo] yum install ruby rubygems ruby-devel gcc
 $ [sudo] gem install redcarpet
 ```
 解晰出html文件后,如果需要PDF版本,可以用`wkhtmltopdf`转换,支持目录,功能更多.
